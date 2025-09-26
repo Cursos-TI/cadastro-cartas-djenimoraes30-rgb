@@ -1,15 +1,57 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+int main(){
+    int População1, PontosTuristicos1, População2, PontosTuristicos2; //apenas um tipo de variavel para todos os pontos, deixando mais facil a leitura
+    char Estado1[20], Codigo1[5], Nome1[20], Estado2[20], Codigo2[5], Nome2[20]; //Todos os nomes significativos para melhor coompreensão
+    float Area1, PIB1, Area2, PIB2;
 
-int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+    printf("Nomeie o estado: \n");
+    scanf(" %s", Estado1);
 
-  // Área para entrada de dados
+    printf("Código da carta: \n"); //Tudo espaçado para maior facilidade de encontrar a pergunta a ser arrumada
+    scanf(" %s", Codigo1);
 
-  // Área para exibição dos dados da cidade
+    printf("Nome da cidade: \n");
+    scanf(" %s", Nome1);
 
-return 0;
-} 
+    printf("Qual a população: \n");
+    scanf("%d", &População1);
+
+    printf("Qual a área: \n");
+    scanf("%f", &Area1);
+
+    printf("Qual o PIB: \n");
+    scanf("%f", &PIB1);
+
+    printf("Quantos pontos turisticos: \n");
+    scanf("%d", &PontosTuristicos1);
+
+    printf("Carta Um: \n"); //Mostra a Carta 1, logo depois já puxa o questionario da carta dois
+    printf("Estado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f\nPontos Turisticos: %d\n", Estado1, Codigo1, Nome1, População1, Area1, PIB1, PontosTuristicos1);
+
+    printf("Nomeie o estado: \n");
+    scanf(" %s", Estado2);
+
+    printf("Código da carta: \n");
+    scanf(" %s", Codigo2);
+
+    printf("Nome da cidade: \n");
+    scanf(" %s", Nome2);
+
+    printf("Qual a população: \n");
+    scanf("%d", &População2);
+
+    printf("Qual a área: \n");
+    scanf("%f", &Area2);
+
+    printf("Qual o PIB: \n");
+    scanf("%f", &PIB2);
+
+    printf("Quantos pontos turisticos: \n");
+    scanf("%d", &PontosTuristicos2);
+
+    printf("Carta Dois: \n");
+    printf("Estado: %s\nCódigo: %s\nCidade: %s\nPopulação: %d\nÁrea: %.2f\nPIB: %.2f\nPontos Turisticos: %d\n", Estado2, Codigo2, Nome2, População2, Area2, PIB2, PontosTuristicos2);
+
+    return 0;
+}
